@@ -41,13 +41,13 @@ int main(int argc, char *argv[]){
                 else x2.state = 0;
                 x1.state = 1;
             }
-            if(x1.state == 1){
+            else if(x1.state == 1){
                 if(x3.state == 0)
                     x3.state = 1;
                 else x3.state = 0;
                 x1.state = 2;
             }
-            if(x1.state == 2){
+            else if(x1.state == 2){
                 if(x4.state == 0)
                     x4.state = 1;
                 else x4.state = 0;
@@ -61,13 +61,13 @@ int main(int argc, char *argv[]){
                 else x2.state = 0;
                 x1.state = 2;
             }
-            if(x1.state == 1){
+            else if(x1.state == 1){
                 if(x3.state == 0)
                     x3.state = 1;
                 else x3.state = 0;
                 x1.state = 1;
             }
-            if(x1.state == 2){
+            else if(x1.state == 2){
                 if(x4.state == 0)
                     x4.state = 1;
                 else x4.state = 0;
