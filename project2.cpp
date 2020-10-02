@@ -21,7 +21,7 @@ int main(int argc, char *argv[]){
     x1.state = starting[0];
     x2.state = starting[1];
     x3.state = starting[2];
-    x4.state = starting[4];
+    x4.state = starting[3];
 
     for(int i = 0; i<path.length()-1; i++){
         if(path[i] == '0'){
