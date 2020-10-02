@@ -74,8 +74,9 @@ int main(int argc, char *argv[]){
                 x1.state = 0;
             }
         }
-        cout << x1.state << x2.state << x3.state << x4.state << "->" << endl;
+        cout << x1.state << x2.state << x3.state << x4.state << "->";
     }
+    cout << x1.state << x2.state << x3.state << x4.state <<endl;
     if(x1.state == 0 && x2.state == 0)
         final = "B: ACCEPT";
     else if(x1.state == 2 && x3.state == 1)
