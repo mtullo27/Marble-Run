@@ -33,7 +33,7 @@ int main(int argc, char *argv[]){
         x4.state = 0;
     else x4.state = 1;
 
-    for(int i = 0; i<path.length(); i++){
+    for(int i = 0; i<path.length()-1; i++){
         if(path[i] == '0'){
             if(x1.state == 0){
                 if(x2.state == 0)
