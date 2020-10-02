@@ -33,7 +33,7 @@ int main(int argc, char *argv[]){
             gates[i].state = 1;
     }
 
-    for(int i = 0; i<strlen(path)-1; i++){
+    for(int i = 0; i<path.length()-1; i++){
         if(path[i] == '0'){
             if(x1.state == 0){
                 if(x2.state == 0)
@@ -82,6 +82,6 @@ int main(int argc, char *argv[]){
     else if(x1.state == 1 && x4.state == 0)
         final = "D: ACCEPT";
     else
-        final = "REJECT: Either State C or E"
+      final = "REJECT: Either State C or E";
     cout << final << endl;
 }
