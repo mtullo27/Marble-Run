@@ -23,7 +23,7 @@ int main(int argc, char *argv[]){
     x3.state = starting[2];
     x4.state = starting[3];
     
-    cout << staring << "->";
+    cout << starting << "->";
     
     for(int i = 0; i<path.length()-1; i++){
         if(path[i] == '0'){
