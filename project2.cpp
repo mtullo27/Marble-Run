@@ -14,7 +14,7 @@ struct gate{
 int main(int argc, char *argv[]){
     string starting = argv[1];
     string path = argv[2];
-    string final;
+    string final = "I AM EMPTY";
 
     gate x1, x2, x3, x4;
 
@@ -79,7 +79,7 @@ int main(int argc, char *argv[]){
       final = "C: Reject";
     else if(x1.state == "R" && x2.state == "R")
       final = "E: Reject";
-    else if(x1.state == "C" && x2.state == "R")
+    else if(x1.state == "C" && x2.state == "L")
       final = "C: Reject";
     cout << final << endl;
 }
