@@ -18,22 +18,22 @@ int main(int argc, char *argv[]){
 
     gate x1, x2, x3, x4;
 
-    vector<gate> gates = {x1, x2, x3, x4};
-
     if(starting[0] == 'L')
          x1.state = 0;
     if(starting[0] == 'R')
         x1.state = 1;
-    else 
-        x1.state = 2;
-    for(int i = 1; i<4; i++){
-        if(starting[i] == 'L')
-            gates[i].state = 0;
-        else
-            gates[i].state = 1;
-    }
+    else x1.state = 2;
+    if(starting[1] == 'L')
+        x2.state = 0;
+    else x2.state = 1;
+    if(starting[2] == 'L')
+        x3.state = 0;
+    else x3.state = 1;
+    if(starting[3] == 'L')
+        x4.state = 0;
+    else x4.state = 1;
 
-    for(int i = 0; i<path.length()-1; i++){
+    for(int i = 0; i<path.length(); i++){
         if(path[i] == '0'){
             if(x1.state == 0){
                 if(x2.state == 0)
