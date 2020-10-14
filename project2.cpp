@@ -25,7 +25,7 @@ int main(int argc, char *argv[]){
     
     cout << starting << "->";
     
-    for(int i = 0; i<path.length()-1; i++){
+    for(int i = 0; i<path.length()-2; i++){
         if(path[i] == '0'){
             if(x1.state == "L"){
                 if(x2.state == "L")
@@ -68,18 +68,18 @@ int main(int argc, char *argv[]){
         }
         cout << x1.state << x2.state << x3.state << x4.state << "->";
     }
-    cout << x1.state << x2.state << x3.state << x4.state <<endl;
+    cout << x1.state << x2.state << x3.state << x4.state;
     if(x1.state == "L" && x2.state == "L")
-        final = "B: ACCEPT";
+        final = "B";
     else if(x1.state == "C" && x3.state == "R")
-        final = "D: ACCEPT";
+        final = "D";
     else if(x1.state == "R" && x4.state == "L")
-        final = "D: ACCEPT";
+        final = "D";
     else if(x1.state == "L" && x2.state == "R")
-      final = "C: Reject";
+      final = "C";
     else if(x1.state == "R" && x2.state == "R")
-      final = "E: Reject";
+      final = "E";
     else if(x1.state == "C" && x2.state == "L")
-      final = "C: Reject";
-    cout << final << endl;
+      final = "C";
+    cout << " " << final << endl;
 }
