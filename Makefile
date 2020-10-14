@@ -1,4 +1,4 @@
-all:project2.cpp
-	g++ -g project2.cpp -o Tullo_p2
+all:Tullo_p2.cpp
+	g++ -g Tull_p2.cpp -o Tullo_p2
 clean:
 	rm -rf *.o Tullo_p2
